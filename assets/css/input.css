@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .primary {
+        @apply text-[#ff4838];
+    }
+    .bg-primary {
+        @apply bg-[#ff4838]
+    }
+    .primary-btn {
+        @apply text-base text-white font-semibold px-5 py-4 bg-primary transition-all duration-500 hover:border-2 hover:border-[#ff4838] hover:bg-transparent hover:text-[#ff4838];
+    }
+    .secondary-btn {
+        @apply text-base font-semibold px-5 py-4 bg-transparent text-[#ff4838] border-2 border-[#ff4838] transition-all duration-500 hover:bg-primary hover:text-white;
+    }
+
+}
+.btn-slider-banner .owl-prev{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(0, -50%);
+    display: flex;
+    z-index: 100;
+}
+.btn-slider-banner .owl-next{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    transform: translate(0, -50%);
+    display: flex;
+    z-index: 100;
+}
+.card-lavel {
+    clip-path: polygon(9% 0, 90% 3%, 100% 94%, 0 100%);
+    transform: translateY(50%);
+}
+/* .owl-dots {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    transform: transSlate(-50%, 0);
+}
+.owl-dot {
+    margin-top: 20px;
+    text-align: center;
+}
+.owl-dot > span {
+    display: block;
+    height: 8px;
+    width: 8px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #eee;
+}         
+.owl-dot.active > span {
+    border: none;
+    border-radius: 10px;
+    background-color: #9f1c33;
+    width: 50px;
+    height: 5px;
+    transition: .5s;
+}
+
+
+/* Testimonial Buttons */
+.btn-slider .owl-prev{
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+    transform: translate(0, -50%);
+    display: flex;
+}
+/* @media screen and (max-width: 768px){
+    .btn-slider .owl-prev{
+        position: absolute;
+        top: 90%;
+        left: 50px;
+        transform: translate(0, -50%);
+        display: flex;
+        z-index: 100;
+    }
+} */
+.btn-slider .owl-next{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    transform: translate(0, -50%);
+    display: flex;    
+}
+/* @media screen and (max-width: 768px) {
+    .btn-slider .owl-next{        
+        position: absolute;
+        top: 90%;
+        right: 20%;
+        transform: translate(0, -50%);
+        display: flex;
+        z-index: 100;
+    }   
+} */
